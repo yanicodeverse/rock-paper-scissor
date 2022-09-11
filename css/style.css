@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(97, 33, 201, 0.568);
+}
+
+/* header section  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.61);
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Uncial Antiqua', cursive;
+    color: rgba(0, 0, 0, 0.555);
+    background-color: ;
+}
+
+
+/* buttons  */
+
+.container {
+    margin-top: 10px;
+    height: 300px;
+    display: flex;
+
+}
+
+.btn-grp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    
+}
+
+.rock {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    font-size: 3rem;
+    border-radius: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.rock:hover {
+    background-color: brown;
+}
+
+.paper {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    font-size: 3rem;
+    border-radius: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.paper:hover {
+    background-color: brown;
+}
+
+.scissor {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    font-size: 3rem;
+    border-radius: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.scissor:hover {
+    background-color: brown;
+}
+
+
+/* score  */
+
+.score {
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Uncial Antiqua', cursive;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+h2 {
+    margin: 25px;
+    font-size: 3rem;
+}
+
+.user_score {
+    max-height: 50px;
+    font-size: 3rem;
+    display: block;
+    position: relative;
+    top: 120px;
+    right: 83px;
+}
+
+.computer_score {
+    max-height: 50px;
+    font-size: 3rem;
+    display: block;
+    position: relative;
+    top: 120px;
+    right: 140px;
+}
+
+@media  screen and (max-width:500px ) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-grp{
+        flex-direction: row;
+        
+    }
+
+    .rock{
+        margin: 10px 30px;
+    } 
+    
+    .paper{
+        margin: 10px 30px;
+    } 
+    
+    .scissor{
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    header{
+        width: 192%;
+    }
+}
+
